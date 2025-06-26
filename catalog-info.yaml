@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: divishtest1
+  description: Terraform-managed S3 bucket for divishtest1
+  annotations:
+    backstage.io/source-template: template:default/s3-bucket
+    github.com/project-slug: crederauk/divishtest1
+    github.com/actions: "true"
+  tags:
+    - terraform
+    - aws
+    - s3
+spec:
+  type: service
+  lifecycle: production
+  owner: user:default/divishrajagopal
